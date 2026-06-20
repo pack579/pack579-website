@@ -1,9 +1,11 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
-  {{ end }}
+  <section class="home-hero">
+    <img
+      class="home-hero__logo"
+      src="{{ "img/bsa-logo.svg" | relURL }}"
+      alt="Boy Scouts logo"
+    >
+    <p class="home-hero__text">Scouting America</p>
+    <p class="home-hero__text">Cub Scout Pack 579</p>
+  </section>
 {{ end }}
